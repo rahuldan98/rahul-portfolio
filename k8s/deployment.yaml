@@ -20,7 +20,7 @@ spec:
 
         - name: website
 
-          image: rahuldan98/rahul-portfolio:36cf55edca35192d5161ccad40b1a19674ceb4a8
+          image: rahuldan98/rahul-portfolio:2a8bc539f286b934d080898b39169458ce2cfe0c
 
           ports:
 
