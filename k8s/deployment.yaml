@@ -15,7 +15,7 @@ spec:
         app: rahul-portfolio
 
     spec:
-
+      revisionHistoryLimit: 5
       containers:
 
         - name: website
