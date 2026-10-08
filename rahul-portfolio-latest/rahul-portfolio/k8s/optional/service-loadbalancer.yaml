@@ -1,0 +1,12 @@
+# Use instead of (or alongside) the Ingress. Not included in kustomization.yaml.
+apiVersion: v1
+kind: Service
+metadata:
+  name: rahul-portfolio-lb
+spec:
+  type: LoadBalancer         # for a bare-metal/local cluster use NodePort and add: nodePort: 30080
+  selector: { app: rahul-portfolio }
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
