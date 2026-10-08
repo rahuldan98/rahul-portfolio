@@ -9,10 +9,10 @@ metadata:
 spec:
   ingressClassName: nginx
   tls:
-    - hosts: [yourdomain.com]                          # TODO
+    - hosts: rahul-dan.com                          # TODO
       secretName: rahul-portfolio-tls
   rules:
-    - host: yourdomain.com                             # TODO
+    - host: rahul-dan.com                             # TODO
       http:
         paths:
           - path: /
