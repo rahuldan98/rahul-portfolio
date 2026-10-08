@@ -1,0 +1,13 @@
+# Requires cert-manager. Apply once per cluster: kubectl apply -f k8s/optional/clusterissuer.yaml
+apiVersion: cert-manager.io/v1
+kind: ClusterIssuer
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: rahuldan98@gmail.com
+    privateKeySecretRef: { name: letsencrypt-prod-key }
+    solvers:
+      - http01:
+          ingress: { ingressClassName: nginx }

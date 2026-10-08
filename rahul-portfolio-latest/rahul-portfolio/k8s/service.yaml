@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rahul-portfolio
+  labels: { app: rahul-portfolio }
+spec:
+  type: ClusterIP
+  selector: { app: rahul-portfolio }
+  ports:
+    - name: http
+      port: 80
+      targetPort: http       # container port 8080
