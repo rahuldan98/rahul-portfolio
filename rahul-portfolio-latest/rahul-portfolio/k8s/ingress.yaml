@@ -2,17 +2,12 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: rahul-portfolio
-  annotations:
-    # Remove this line and the tls block below if you are not using cert-manager
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+  labels:
+    app: rahul-portfolio
 spec:
   ingressClassName: nginx
-  tls:
-    - hosts: rahul-dan.com                          # TODO
-      secretName: rahul-portfolio-tls
   rules:
-    - host: rahul-dan.com                             # TODO
+    - host: rahul-portfolio.local
       http:
         paths:
           - path: /
@@ -20,4 +15,5 @@ spec:
             backend:
               service:
                 name: rahul-portfolio
-                port: { name: http }
+                port:
+                  number: 80
