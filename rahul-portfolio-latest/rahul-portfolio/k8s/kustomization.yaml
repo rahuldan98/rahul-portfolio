@@ -4,7 +4,6 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
-  - hpa.yaml
 images:
   - name: YOUR_DOCKERHUB_USER/rahul-portfolio
     newName: YOUR_DOCKERHUB_USER/rahul-portfolio   # TODO: your Docker Hub user
