@@ -23,7 +23,7 @@ spec:
         seccompProfile: { type: RuntimeDefault }
       containers:
         - name: web
-          image: YOUR_DOCKERHUB_USER/rahul-portfolio:1.0.0   # TODO: set your Docker Hub user
+          image: rahuldan98/rahul-portfolio-latest:v1   # TODO: set your Docker Hub user
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
