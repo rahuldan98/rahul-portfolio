@@ -5,6 +5,6 @@ resources:
   - service.yaml
   - ingress.yaml
 images:
-  - name: YOUR_DOCKERHUB_USER/rahul-portfolio
-    newName: YOUR_DOCKERHUB_USER/rahul-portfolio   # TODO: your Docker Hub user
-    newTag: "1.0.0"
+  - name: rahuldan98/rahul-portfolio-latest
+    newName: rahuldan98/rahul-portfolio-latest   # TODO: your Docker Hub user
+    newTag: "v1"
