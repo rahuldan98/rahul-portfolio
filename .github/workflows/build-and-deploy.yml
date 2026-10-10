@@ -32,8 +32,8 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./rahul-portfolio-latest/rahul-portfolio
+          file: ./rahul-portfolio-latest/rahul-portfolio/Dockerfile
           push: true
           tags: rahuldan98/rahul-portfolio-latest:${{ github.sha }}
 
