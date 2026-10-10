@@ -10,27 +10,47 @@ import Footer from './components/Footer.jsx';
 
 export default function App() {
   // Theme: initial value was set by /theme-init.js
-  const [theme, setTheme] = useState(() => document.documentElement.dataset.theme || 'dark');
+  const [theme, setTheme] = useState(
+    () => document.documentElement.dataset.theme || 'dark'
+  );
+
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
-    try { localStorage.setItem('theme', theme); } catch { /* storage may be blocked */ }
+
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Storage may be blocked
+    }
   }, [theme]);
 
   // Scroll-reveal: add the "in" class once an element enters the viewport
   useEffect(() => {
     const io = new IntersectionObserver(
-      (entries) => entries.forEach((e) => {
-        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-      }),
+      (entries) =>
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        }),
       { threshold: 0.15 }
     );
+
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
     return () => io.disconnect();
   }, []);
 
   return (
     <>
-      <Navbar theme={theme} toggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
+      <Navbar
+        theme={theme}
+        toggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      />
+
+      {/* Test GitHub Actions CI/CD: automatic Docker image build */}
+
       <main>
         <Hero />
         <About />
@@ -39,6 +59,7 @@ export default function App() {
         <Experience />
         <Contact />
       </main>
+
       <Footer />
     </>
   );
