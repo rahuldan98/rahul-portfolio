@@ -7,4 +7,4 @@ resources:
 images:
   - name: rahuldan98/rahul-portfolio-latest
     newName: rahuldan98/rahul-portfolio-latest   # TODO: your Docker Hub user
-    newTag: "5077f60f95bf729f73a6eb0bf0338834c06f8970"
+    newTag: "3650019c2b923e6a8ac0684f59b36c39606bb961"
