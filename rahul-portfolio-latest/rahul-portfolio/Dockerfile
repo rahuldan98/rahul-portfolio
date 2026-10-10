@@ -16,7 +16,7 @@ COPY --from=build /app/dist /usr/share/nginx/html
 # Run as the unprivileged "nginx" user (uid 101). Non-root can't bind port 80,
 # so nginx listens on 8080; the Kubernetes Service maps 80 -> 8080.
 USER nginx
-EXPOSE 8080
+EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
   CMD wget -qO- http://127.0.0.1:8080/healthz || exit 1
