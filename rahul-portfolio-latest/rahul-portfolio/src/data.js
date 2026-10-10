@@ -6,7 +6,7 @@ export const profile = {
   // TODO: replace with your own 2-3 line bio
   bio: [
     'DevOps Engineer with 5+ years of experience designing CI/CD pipelines and running containerized workloads on Kubernetes, OpenShift and AWS EKS.',
-    'I care about automation, GitOps and making deployments boring, in the best possible way.',
+    'I care about automation, GitOps and making deployments fastest.',
     'Certified Kubestronaut, always learning and sharing cloud-native practices.',
   ],
   email: 'rahuldan98@gmail.com',
