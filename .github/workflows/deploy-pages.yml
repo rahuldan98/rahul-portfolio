@@ -43,7 +43,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: rahul-portfolio-latest/rahul-portfolio
-        run: npm ci
+        run: npm install
 
       - name: Build React website
         working-directory: rahul-portfolio-latest/rahul-portfolio
