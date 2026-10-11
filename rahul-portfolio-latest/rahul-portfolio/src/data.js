@@ -7,7 +7,7 @@ export const profile = {
   bio: [
     'DevOps Engineer with 5+ years of experience designing CI/CD pipelines and running containerized workloads on Kubernetes, OpenShift and AWS EKS.',
     'I care about automation, GitOps and making deployments fastest.',
-    'Certified Kubestronaut, always learning and sharing cloud-native practices.',
+    'Certified Kubestronaut, always learning and sharing cloud-native practice.',
   ],
   email: 'rahuldan98@gmail.com',
   linkedin: 'https://www.linkedin.com/in/rahuldan98/',
