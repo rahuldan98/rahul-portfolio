@@ -35,8 +35,14 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="avatar reveal slide-right" aria-hidden="true">
-          <div className="ring"><span>RD</span></div>
+        <div className="avatar reveal slide-right">
+          <div className="ring">
+            <img
+              src="/rahul.jpg"
+              alt="Rahul Dan"
+              className="avatar-photo"
+            />
+          </div>
         </div>
       </div>
     </section>
