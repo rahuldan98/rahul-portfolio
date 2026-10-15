@@ -77,8 +77,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .lead { color: var(--muted); max-width: 520px; margin-bottom: 1.6rem; }
 .cta { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1.6rem; }
 .avatar { display: grid; place-items: center; }
-.ring { width: min(280px, 70vw); aspect-ratio: 1; border-radius: 50%; padding: 6px; background: var(--grad); animation: float 5s ease-in-out infinite; box-shadow: 0 20px 60px rgba(124,58,237,.45); }
-.ring span { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--bg); font: 700 4.5rem 'Space Grotesk', sans-serif; background-clip: padding-box; color: var(--accent); }
+.ring { width: min(280px, 70vw); aspect-ratio: 1; border-radius: 50%; padding: 6px; background: var(--grad); animation: float 5s ease-in-out infinite; box-shadow: 0 20px 60px rgba(124,58,237,.45); overflow: hidden; }
+.avatar-photo { width: 100%; height: 100%; object-fit: cover; object-position: top; border-radius: 50%; display: block; }
 
 /* ========== Socials ========== */
 .socials { display: flex; gap: .8rem; }
