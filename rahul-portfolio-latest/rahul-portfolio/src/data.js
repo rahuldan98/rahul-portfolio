@@ -66,6 +66,14 @@ export const experience = [
     company: 'Amdocs',
     role: 'DevOps Engineer',
     period: '2021 – Jul 2026',
-    points: ['TODO: add highlight #1', 'TODO: add highlight #2'],
+    points: [
+      'Migrated applications to AWS EKS with zero-downtime using IAM & VPC best practices.',
+      'Managed & optimized EKS clusters — node hardening, IAM tuning, and high availability.',
+      'Built CI/CD pipelines with Jenkins & Bitbucket for automated build, test & deploy workflows.',
+      'Automated incident ticketing by integrating Python/Shell scripts with ServiceNow & Jenkins APIs.',
+      'Deployed Prometheus, Grafana, ELK stack for real-time observability and proactive alerting.',
+      'Led production incident RCAs and applied preventive controls to improve system resilience.',
+      'Implemented GitOps workflows using ArgoCD for declarative, automated Kubernetes deployments.',
+    ],
   },
 ];
