@@ -16,7 +16,7 @@ export default function Hero() {
           </p>
           <p className="lead">{profile.tagline}</p>
           <div className="cta">
-            <a className="btn primary" href="#projects">View Projects</a>
+            <a className="btn primary" href="#experience">View Experience</a>
             <a className="btn ghost" href="#contact">Contact Me</a>
           </div>
           <Socials />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const links = ['about', 'skills', 'projects', 'experience', 'contact'];
+const links = ['about', 'skills', 'experience', 'contact'];
 
 export default function Navbar({ theme, toggleTheme }) {
   const [open, setOpen] = useState(false);
