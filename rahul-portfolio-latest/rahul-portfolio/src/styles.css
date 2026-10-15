@@ -89,6 +89,25 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .card h3 { margin-bottom: .8rem; }
 .cert { display: flex; gap: 1rem; align-items: center; }
 .badge { font-size: 2rem; }
+/* Kubestronaut badge — Hero (large) */
+.kubestronaut-badge {
+  height: 90px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(124,58,237,.4));
+  transition: transform .3s, filter .3s;
+}
+.kubestronaut-badge:hover { transform: scale(1.08); filter: drop-shadow(0 6px 18px rgba(124,58,237,.6)); }
+
+/* Kubestronaut badge — About certifications card (small) */
+.kubestronaut-badge-sm {
+  height: 64px;
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 2px 8px rgba(124,58,237,.35));
+  transition: transform .3s;
+}
+.kubestronaut-badge-sm:hover { transform: scale(1.1); }
 
 /* ========== Skills ========== */
 .bars { display: grid; gap: 1.1rem; }
