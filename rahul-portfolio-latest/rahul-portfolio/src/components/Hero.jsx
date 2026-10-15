@@ -20,6 +20,20 @@ export default function Hero() {
             <a className="btn ghost" href="#contact">Contact Me</a>
           </div>
           <Socials />
+          <div className="hero-badge reveal" style={{ marginTop: '1.2rem' }}>
+            <a
+              href="https://www.cncf.io/training/kubestronaut/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="CNCF Kubestronaut"
+            >
+              <img
+                src="/kubestronaut.png"
+                alt="CNCF Kubestronaut Badge"
+                className="kubestronaut-badge"
+              />
+            </a>
+          </div>
         </div>
         <div className="avatar reveal slide-right" aria-hidden="true">
           <div className="ring"><span>RD</span></div>

@@ -13,7 +13,18 @@ export default function About() {
             <h3>Certifications</h3>
             {certifications.map((c) => (
               <div className="cert" key={c.name}>
-                <span className="badge">🏅</span>
+                <a
+                  href="https://www.cncf.io/training/kubestronaut/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="CNCF Kubestronaut"
+                >
+                  <img
+                    src="/kubestronaut.png"
+                    alt="Kubestronaut Badge"
+                    className="kubestronaut-badge-sm"
+                  />
+                </a>
                 <div><strong>{c.name}</strong><p>{c.desc}</p></div>
               </div>
             ))}
