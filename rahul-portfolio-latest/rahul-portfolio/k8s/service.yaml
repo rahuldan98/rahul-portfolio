@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: rahul-portfolio
   labels: { app: rahul-portfolio }
+  namespace: portfolio
 spec:
   type: ClusterIP
   selector: { app: rahul-portfolio }

@@ -4,6 +4,7 @@ metadata:
   name: rahul-portfolio
   labels:
     app: rahul-portfolio
+  namespace: portfolio
 spec:
   ingressClassName: nginx
   rules:
