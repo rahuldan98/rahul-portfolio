@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: rahul-portfolio
   labels: { app: rahul-portfolio }
+  namespace: portfolio
 spec:
   replicas: 2
   revisionHistoryLimit: 5

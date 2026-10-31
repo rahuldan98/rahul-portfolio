@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rahul-portfolio-lb
+  namespce: portfolio
 spec:
   type: LoadBalancer         # for a bare-metal/local cluster use NodePort and add: nodePort: 30080
   selector: { app: rahul-portfolio }
